@@ -1,0 +1,29 @@
+
+ body{
+
+ }
+
+.icc{
+    font-size: 2rem;
+    color:  white;
+  }
+
+.sticky-top{
+    font-size: 1.2rem;
+   font-family: sans-serif;
+} 
+.nav-link, .NavDropdown{
+    color: white;
+}
+
+.nav-link:hover{
+    color:white;
+    border-bottom: 1px solid white;
+   
+} 
+.bord,
+.NavDropdown {
+    border-bottom: 1px solid transparent; 
+    text-decoration: none!important;
+}
+
