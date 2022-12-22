@@ -137,6 +137,17 @@ const Home = () => {
  
 
 
+  <Container>
+  <Row>
+    <Col>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          </Col>
+    </Row>
+  </Container>
+
 
   <Container fluid  className ="p-4 bg-dark">
     <Row>
