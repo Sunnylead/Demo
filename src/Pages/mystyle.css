@@ -1,7 +1,13 @@
 
  body{
+    animation: fadein 3s;
+}
 
- }
+
+@keyframes fadein{
+    0%{opacity: 0%;}
+    100%{opacity: 100%;}
+}
 
 .icc{
     font-size: 2rem;
@@ -12,18 +18,33 @@
     font-size: 1.2rem;
    font-family: sans-serif;
 } 
-.nav-link, .NavDropdown{
+.nav-link{
     color: white;
 }
+
 
 .nav-link:hover{
     color:white;
     border-bottom: 1px solid white;
    
 } 
-.bord,
-.NavDropdown {
+
+.nav-link,
+.navylnk {
     border-bottom: 1px solid transparent; 
     text-decoration: none!important;
+    color: white!important;
 }
 
+.navylnkdrop {
+     text-decoration: none!important;
+     border-bottom: 1px solid transparent; 
+     color: rgb(25, 135, 84);
+    
+}
+
+.navylnkdrop:hover,
+.drop:hover{
+    color:white!important;
+    background: rgb(25, 135, 84)!important;   
+}

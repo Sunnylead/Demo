@@ -5,6 +5,7 @@ import Col  from 'react-bootstrap/Col';
 import React from 'react';
 import Container  from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './mystyle.css';
 
 import { Outlet, Link } from "react-router-dom";
 
@@ -75,6 +76,7 @@ const Contact = () => {
       </>
     );
   };
+  
   
   export default Contact;
   

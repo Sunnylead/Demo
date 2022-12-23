@@ -7,7 +7,6 @@ import Container  from 'react-bootstrap/Container';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Outlet, Link } from "react-router-dom";
 
-
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
@@ -16,17 +15,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faGithub, faLinkedin, faWhatsapp, faYoutube} from '@fortawesome/free-brands-svg-icons';
 import 'animate.css';
 import './mystyle.css';
+import ss from './img/ss.png'
 
 
 const Home = () => {
     
     return (
    <>
-<h3 className='text-center'> Silver Tech</h3>
+<h3 className='text-center'> Silver Digital Tech</h3>
 <p  className='text-center'>Think it we create it </p>
 
 {["md"].map((expand) => (
-        <Navbar key={expand} bg="dark" variant= "dark" expand={expand} className="mb-3 sticky-top">
+        <Navbar key={expand} bg="success" variant="dark" expand={expand} className="mb-3 sticky-top">
           <Container fluid>
             <Navbar.Brand href="#"></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
@@ -35,29 +35,30 @@ const Home = () => {
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
-              <Offcanvas.Header closeButton className='bg-dark text-white'>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}> </Offcanvas.Title>
-              </Offcanvas.Header>
+             
+               <Offcanvas.Header closeButton closeVariant='white'  className=' bg-success text-white'>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}> Technology</Offcanvas.Title>          
+              </Offcanvas.Header> 
               
-              <Offcanvas.Body className='bg-dark text-white'>
-                <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href='#gg' className='bord'>Home</Nav.Link>
-                  <Nav.Link href='#g'  className='bord'>Pricing</Nav.Link>
-                  <NavDropdown  
-                    title="Our Services" 
-                    id={`offcanvasNavbarDropdown-expand-${expand}`}
-                    >
-                    <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                    <NavDropdown.Item href="#action4">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item href="#action5">
-                      Something else here
-                    </NavDropdown.Item>
+             
+              
+              <Offcanvas.Body className='bg-success text-white'>
+                <Nav className="justify-content-center flex-grow-1 pe-3">
+                  <Nav.Link><Link to="#" className='navylnk'>Home</Link></Nav.Link>
+                  <Nav.Link><Link to="" className='navylnk'>Pricing</Link></Nav.Link>
+                  <NavDropdown title="Our Services" className='text-white'
+                    id={`offcanvasNavbarDropdown-expand-${expand}`}>
+
+                    <NavDropdown.Item className='drop mb-1'><Link to="#" className='navylnkdrop'>Action</Link></NavDropdown.Item>
+                    <NavDropdown.Item className='drop mb-1'><Link to="#" className='navylnkdrop'>Another</Link></NavDropdown.Item>
+                    <NavDropdown.Item className='drop mb-1'><Link to="#" className='navylnkdrop'>Another</Link></NavDropdown.Item>
+                    <NavDropdown.Item className='drop mb-1'><Link to="#" className='navylnkdrop'>Another</Link></NavDropdown.Item>
+                    <NavDropdown.Divider /> 
+                    
+                    <NavDropdown.Item className='drop mb-1'><Link to="#" className='navylnkdrop'>Something else here</Link></NavDropdown.Item>
                   </NavDropdown>
-                  <Nav.Link href="/about"   className='bord'>About Us</Nav.Link>
-                  <Nav.Link className='bord'><Link to="/contact">Contact Us</Link></Nav.Link>
+                  <Nav.Link><Link to="/about"  className='navylnk'>About Us</Link></Nav.Link>
+                  <Nav.Link><Link to="/contact" className='navylnk'>Contact Us</Link></Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
@@ -79,27 +80,40 @@ const Home = () => {
 
 <Container>
   <Row>
+  
+    <Col md className=''>
+      
+        <img src={ss} width='60%' alt="logo" />
+</Col>
+
+    <Col md>
+         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+        </Col>
+    </Row>
+  </Container>
+
+  <Container className='mt-5'>
+  <Row>
+  <Col md>
+  <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+</Col>
+
     <Col>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
+         <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
           <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          </Col>
-      <Col>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-</Col>
-
-<Col>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-</Col>
-</Row>
-</Container>
+        </Col>
+    </Row>
+  </Container>
 
 
 
@@ -107,8 +121,7 @@ const Home = () => {
 
 
 
-
-    <Container className='mt-5'>
+    <Container className='mb-5 mt-5'>
   <Row>
     <Col className='col-md-4 offset-md-4 bg-success p-5 text-white rounded'>
   <Form>
@@ -127,8 +140,8 @@ const Home = () => {
     <Form.Group className="mb-3" controlId="formBasicCheckbox">
       <Form.Check type="checkbox" label="Check me out" />
     </Form.Group>
-    <Button variant="primary" type="submit">
-      Submit
+    <Button variant="light"className='dark' type="submit" style={{fontweight:''}}>
+    Submit
     </Button>
   </Form>
     </Col>
@@ -137,26 +150,19 @@ const Home = () => {
  
 
 
-  <Container>
-  <Row>
-    <Col>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor 
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
-          </Col>
-    </Row>
-  </Container>
 
+
+
+ 
 
   <Container fluid  className ="p-4 bg-dark">
     <Row>
       <Col sm={10} className='text-light'> 
-          <h2 class="animate__animated animate__fadeIn animate__infinite">Keep Jumping</h2></Col>
+          <h2 class="animate__animated animate__fadeOut animate__infinite animate__delay-2s">Triniterian Coded Tech</h2></Col>
       <Col className='d-flex justify-content-between'>
                       
          <Link to="/contact"> <FontAwesomeIcon className='icc' icon={faFacebook} /></Link >
-         <a href='#f'><FontAwesomeIcon className='icc' icon={faGithub} /></a>
+         <Link to=""><FontAwesomeIcon className='icc' icon={faGithub} /></Link >
          <a href='#f'><FontAwesomeIcon className='icc' icon={faWhatsapp} /></a>
          <a href='#f'><FontAwesomeIcon className='icc' icon={faYoutube} /></a>
          <a href='#f'><FontAwesomeIcon className='icc' icon={faLinkedin} /></a>
