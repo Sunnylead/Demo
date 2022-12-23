@@ -28,7 +28,7 @@ const Home = () => {
 {["md"].map((expand) => (
         <Navbar key={expand} bg="success" variant="dark" expand={expand} className="mb-3 sticky-top">
           <Container fluid>
-            <Navbar.Brand href="#"></Navbar.Brand>
+            <Navbar.Brand href="#">Silver Tech</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -36,13 +36,13 @@ const Home = () => {
               placement="end"
             >
              
-               <Offcanvas.Header closeButton closeVariant='white'  className=' bg-success text-white'>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}> Technology</Offcanvas.Title>          
+               <Offcanvas.Header closeButton closeVariant='white'  className='bg-success text-white'>
+                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}></Offcanvas.Title>          
               </Offcanvas.Header> 
               
              
               
-              <Offcanvas.Body className='bg-success text-white'>
+              <Offcanvas.Body className='bg-success text-white text-center offcavmenu'>
                 <Nav className="justify-content-center flex-grow-1 pe-3">
                   <Nav.Link><Link to="#" className='navylnk'>Home</Link></Nav.Link>
                   <Nav.Link><Link to="" className='navylnk'>Pricing</Link></Nav.Link>
