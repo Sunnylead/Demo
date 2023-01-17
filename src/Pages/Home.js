@@ -86,6 +86,8 @@ const Home = () => {
         <img src={ss} width='60%' alt="logo" />
         <h2>cloning and git push update testing</h2>
         <h2>changing directory and git push update testing</h2>
+        <h2>NETLIFY</h2>
+
 </Col>
 
     <Col md>
